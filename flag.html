@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .red {
+        margin: 100px auto 0 auto;
+        width: 900px;
+        height: 600px;
+        background-color: #e00120;
+      }
+
+      .red::before,
+      .red::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 150px;
+        background-color: #002aa2;
+      }
+
+      .angkor-wat {
+        display: block;
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="red">
+        <img class="angkor-wat" src="./angkor-wat.svg" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
